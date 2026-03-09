@@ -8,14 +8,14 @@ The system is composed of several decoupled components interacting via a central
 
 ```mermaid
 graph TD
-    User([User])
-    CLI[CLI Tool]
-    Dashboard[Next.js Dashboard]
-    API[Go API (Gin)]
-    Redis[(Redis Queue)]
-    Postgres[(PostgreSQL DB)]
-    Worker[Go Worker Service]
-    Docker[Docker Containers]
+    User(["User"])
+    CLI["CLI Tool"]
+    Dashboard["Next.js Dashboard"]
+    API["Go API (Gin)"]
+    Redis[("Redis Queue")]
+    Postgres[("PostgreSQL DB")]
+    Worker["Go Worker Service"]
+    Docker["Docker Containers"]
 
     User -- "Submit Assignment" --> CLI
     User -- "View Status" --> Dashboard
